@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  {% include head.html %}
+
+  <body>
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="{{ site.baseurl }}/">
+          <h2 class="nav-title">{{ site.title }}</h2>
+        </a>
+        <ul>
+          <li><a href="{{ '/acerca-de' | prepend: site.baseurl }}">Acerca de</a></li>
+          <li><a href="{{ site.baseurl }}/">Entradas</a></li>
+        </ul>
+    </div>
+  </nav>
+
+    <main>
+      {{ content }}
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}. Hecho en Jekyll usando un fork del tema <a href="https://github.com/chesterhow/tale/">Tale</a>.
+      </span>
+    </footer>
+  </body>
+</html>
