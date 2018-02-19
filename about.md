@@ -1,15 +1,11 @@
 ---
 layout: post
-title: "About"
-author: "Chester"
+title: "Acerca de mí"
+author: "despino"
 permalink: /acerca-de/
 ---
 
-A friend of mine writes short stories. One sunny day, I asked if he wanted a website to showcase his works and he agreed. I decided to use GitHub Pages to host his site. That way he wouldn't have to buy a domain and a server.
+Por ahora no voy a decir demasiado sobre mí, más que en este espacio encontrarán notas sobre cuestiones que voy leyendo y/o investigando. Pueden seguirme en [Twitter](https://www.twitter.com/despinoUY) y puede que diga alguna cosa más. Nos estamos leyendo.
 
-While doing some research up on GitHub Pages, I accidentally chanced upon this _simple, blog-aware, static site generator_ called [Jekyll](https://jekyllrb.com/) which works really well with GitHub Pages. I figured it would do just fine for my friend and I set about searching for a pretty theme. I wanted a theme with a _book-ish_ vibe. Unfortunately, most of the themes were too modern. Eventually, I caved and begun working on my own theme. With the help of [Poole](https://github.com/poole/poole), the Jekyll Butler, I was able to build **Tale**.
-
-## Contribute
-Feel free to create an issue or make a pull request on [GitHub](https://github.com/chesterhow/tale).
-
-Thanks for reading!
+## Aviso
+Todo contenido que escriba aquí es de libre uso siempre y cuando se citen fuentes.
