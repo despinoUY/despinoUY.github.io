@@ -9,7 +9,5 @@ Soy ingeniero recibido en la [Facultad de Ingeniería](https://www.fing.edu.uy) 
 
 Actualmente soy desarrollador web en [Vix](https://www.vix.com) y colaborador de [DATA Uruguay](https://www.datauy.org).
 
-Pueden seguirme en [Twitter](https://www.twitter.com/despinoUY).
-
 ## Aviso
 Todo contenido que se encuentre en este blog es de libre uso siempre y cuando se citen fuentes.

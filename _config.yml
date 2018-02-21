@@ -1,12 +1,17 @@
 # Site settings
-title:          Danilo Espino
+title:          "Danilo Espino"
 description:    "despino's blog"
 url:            "https://despinouy.github.io"
 
 # Author
 author:
-  name:         Danilo Espino
-  url:          https://despinouy.github.io
+  name:         "Danilo Espino"
+  url:          "https://despinouy.github.io"
+  facebook:     despinoUY
+  twitter:      despinoUY
+  instagram:    despinoUY
+  linkedin:     despinoUY
+  github:       despinoUY
 
 # Build settings
 markdown:       kramdown
