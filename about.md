@@ -1,13 +1,13 @@
 ---
-layout: post
-title: "Acerca de mí"
-author: "despino"
-permalink: /acerca-de/
+layout: page
+title: About me
+permalink: /about/
 ---
 
-Soy ingeniero recibido en la [Facultad de Ingeniería](https://www.fing.edu.uy) de la [Universidad de la República](https://www.universidad.edu.uy). He sido integrante del [Instituto de Computación](https://www.fing.edu.uy/inco) durante algunos años integrando los planteles docentes de los cursos de Programación 2 y Programación 3. Asimismo he desarrollado trabajos académicos en el grupo del Laboratorio de Computación Heterogénea (HCL).
+I'm a Uruguayan developer and a tech enthusiast. I've been dictating some courses and doing academic research at [Facultad de Ingeniería, Universidad de la República](https://www.fing.edu.uy). I'm a member of [DATA Uruguay](https://www.data.org.uy), a civil society organization that works on open government, open data, transparency, freedom of information and participation through the use of civic technology.
 
-Actualmente soy desarrollador web en [Vix](https://www.vix.com) y colaborador de [DATA Uruguay](https://www.datauy.org).
+Currently I'm mainly working with Drupal and Jekyll, but learning languages and new technologies is something I enjoy and find as a nice challenge everyday.
 
-## Aviso
-Todo contenido que se encuentre en este blog es de libre uso siempre y cuando se citen fuentes.
+I'm also a voiceover talent and a motorsport journalist.
+
+Interested in contacting me? You can find my social network accounts in the footer.

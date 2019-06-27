@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Roboto+Mono&display=swap');
+
+body {
+    font-family: 'Bitter', sans-serif !important;
+}
+
+code {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.post-tags {
+    text-align: right;
+}
+
+footer {
+    .wrapper {
+        text-align: center;
+    }
+    .social-links {
+        font-size: 2rem;
+    }
+}
+
+.copyleft {
+    display:inline-block;
+    transform: rotate(180deg);
+}
+
+.post-excerpt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > .post-image{
+        width: 45%;
+    }
+    > .post-summary  {
+        width: 70%;
+        display: flex;
+        flex-flow: column;
+    }
+    p {
+        text-align: justify;
+    }
+    .post-image {
+        padding: 0 10px;
+        object-fit: cover;
+        height: 150px;
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 415px) {
+    .post-excerpt {
+        flex-direction: column;
+        > .post-summary {
+            width: 100%;
+        }
+        .post-image {
+            width: 100%;
+        }
+    }
+}
