@@ -9,6 +9,11 @@ layout: default
 
   {{ content }}
 
+  {% assign posts = site.posts %}
+  {% if site.paginate %}
+    {% assign posts = paginator.posts %}
+  {% endif %}
+
   {%- if site.posts.size > 0 -%}
     <ul class="post-list">
       {%- for post in site.posts -%}
@@ -31,6 +36,18 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
+
+    {% if site.paginate and paginator.total_pages %}
+    <div class="pagination">
+      <div class="page_number">Page {{ paginator.page }} of {{ paginator.total_pages }}</div>
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="previous">&laquo; Anterior</a>
+      {% endif %}
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Siguiente &raquo;</a>
+      {% endif %}
+    </div>
+    {% endif %}
 
     <p class="feed-subscribe">
       <a href="{{ 'feed.xml' | relative_url }}">

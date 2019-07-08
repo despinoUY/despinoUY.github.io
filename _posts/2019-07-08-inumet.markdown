@@ -1,0 +1,29 @@
+---
+layout:  post
+title:   "Buscando temperaturas o una historia de ingeniería reversa"
+image:   "https://www.inumet.gub.uy/sites/default/files/2018-03/logo-inumet-001.jpg"
+excerpt: "Una pequeña historia sobre como hacer ingeniería reversa para obtener información que no está disponible fácilmente. De paso, te llevás los datos del INUMET."
+date:    2019-07-08 00:00:00 -0300
+categories: [INUMET, Datos Abiertos, Español]
+---
+
+Hace un tiempo que estaba interesado en tener los datos que utilizaba la aplicación del INUMET ([Instituto Uruguayo de Meteorología](https://www.meteorologia.gub.uy/)) para poder consultarlos de alguna forma que no fuera a través de ella. Me resultaba bastante llamativo que estos datos no estuvieran disponibles de forma pública considerando que la aplicación era gratuita y que la institución era pública, así que me puse manos a la obra para encontrarlos a mi manera.
+
+En primer lugar necesitaba la aplicación, así que lo primero que hice fue descargarme el archivo `apk` (el archivo compilado de una aplicación para el sistema operativo Android) de la aplicación del INUMET. Para ello recurrí al [APK Downloader de Evozi](https://apps.evozi.com/apk-downloader/), una solución bastante popular para hacer esto. Allí se ingresa simplemente el link a donde encontrar la aplicación en Google Play Store y nos podremos descargar ese archivo.
+
+Teniendo eso, el segundo paso es hacer la parte más complicada que es decompilar el archivo y, de esta forma, llegar al código fuente para poder investigarlo. Existen diversas opciones, pero como quería llegar más o menos rápido a la solución opté por utilizar otra herramienta online: [APK decompiler de Java Decompilers](http://www.javadecompilers.com/apk). Luego de subir el archivo `apk` a la plataforma, en unos minutos obtendremos un archivo `zip` con el código fuente completo en él.
+
+Ahora supondrán que el trabajo es sencillo. Pues no: la decompilación, como es de esperar, genera los nombres de variables y clases de forma aleatoria, por lo que es bastante complicado de leer. Por lo tanto es necesario ir buscando por bibliotecas que uno puede ir conociendo o directamente por frases clave a lo largo de todo el proyecto.
+
+En nuestro caso yo suponía que estos datos se consumían a través de una API o directamente consultaban a un JSON que se actualizaba periódicamente. Por lo tanto fui buscando apariciones de `http` o `json` en el proyecto. Gracias a eso encontré la siguiente URL:
+
+{% highlight console %}
+https://www.inumet.gub.uy/android/info_recursosV3.json
+{% endhighlight %}
+
+En esa URL podrán encontrar un JSON con los recursos utilizados por la aplicación. Entre otros datos encontrarán:
+ - en el objeto `estaciones` los datos de todas las estaciones meteorológicas que utiliza la institución
+ - en el objeto `zonas` la latitud y longitud del centro de cada una de las zonas utilizadas por el INUMET para determinar sus pronósticos junto con los departamentos que cada una incluye
+ - en el objeto `estadoactual`, también como lo indica su nombre, el estado del tiempo actual en varias de las estaciones meteorológicas que monitorean el tiempo.
+
+Así que ya saben: con un poco de mañas se puede sacar información de cualquier lado.
