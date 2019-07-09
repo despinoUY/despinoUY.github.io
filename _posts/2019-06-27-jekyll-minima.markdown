@@ -1,6 +1,10 @@
 ---
 layout:  post
 title:   "Some interesting things about Jekyll's Minima theme"
+image_alt: {
+    url: "https://upload.wikimedia.org/wikipedia/commons/4/42/Jekyll_%28software%29_Logo.png",
+    source: "Wikimedia"
+}
 image:   "https://upload.wikimedia.org/wikipedia/commons/4/42/Jekyll_%28software%29_Logo.png"
 excerpt: "If you are having some problems customizing Minima theme, this post is worth reading."
 date:    2019-06-27 00:00:00 -0300

@@ -26,7 +26,10 @@ layout: default
           </a>
         </h3>
         <div class="post-excerpt">
-          <img class="post-image" src="{{ post.image }}"/>
+          <div id="post-img-wrapper" class="post-image">
+            <img src="{{ post.image_alt.url }}"/>
+            <div class="post-img-tm">{{ post.image_alt.source }}</div>
+          </div>
           <div class="post-summary">
             <p>
                 {{ post.excerpt }}

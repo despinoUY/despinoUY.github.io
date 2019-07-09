@@ -46,6 +46,20 @@ footer {
         object-fit: cover;
         height: 150px;
         max-width: 280px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .post-img-tm {
+            width: 100%;
+            text-align: right;
+            font-size: 12px;
+            margin-top: -18px;
+            box-sizing: border-box;
+            padding-right: 5px;
+            font-style: italic;
+        }
     }
 }
 

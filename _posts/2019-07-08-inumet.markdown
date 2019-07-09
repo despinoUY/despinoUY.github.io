@@ -1,6 +1,10 @@
 ---
 layout:  post
 title:   "Buscando temperaturas o una historia de ingeniería reversa"
+image_alt: {
+    url: "https://www.inumet.gub.uy/sites/default/files/2018-03/logo-inumet-001.jpg",
+    source: "INUMET"
+}
 image:   "https://www.inumet.gub.uy/sites/default/files/2018-03/logo-inumet-001.jpg"
 excerpt: "Una pequeña historia sobre como hacer ingeniería reversa para obtener información que no está disponible fácilmente. De paso, te llevás los datos del INUMET."
 date:    2019-07-08 00:00:00 -0300
